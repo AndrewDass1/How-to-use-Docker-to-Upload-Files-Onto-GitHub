@@ -1,10 +1,10 @@
 # How to use Docker to Upload Files onto Github
 
 ## Table of Contents
-* [Overview] (#Overview)
-* [Materials] (#Materials)
-* [Software] (#Software)
-* [Procedure] (#Procedure)
+* [Overview](#Overview)
+* [Materials](#Materials)
+* [Software](#Software)
+* [Procedure](#Procedure)
 
 # Overview
 Git is a popular version control software many people in the technology industry uses to create different repositories to store different files to showcase their work or projects. By installing Git on a computer and running Git commands through the command prompt or terminal or by using Git's GUI Github, people can upload their files into a repository. A similar way to uploading files through the terminal is by using a program called Docker and Dockerhub. 
