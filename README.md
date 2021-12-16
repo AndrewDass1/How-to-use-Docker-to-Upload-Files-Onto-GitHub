@@ -74,16 +74,52 @@ ssh is now usable to enter other secure shells or servers <br>
 <br>
 9. Make a new Github repository in you Github account <br>
 <br>
-10. Run the following command in the next command prompt or terminal window: docker run -v "computerdirectory":/"----" --rm -ti ubuntu:latest bash
-    * "---" is the new name of the new folder that will be made in the Docker container
-    * This commands links up the local host's current directory to the docker container. Files that are in the the local host computer appear in the container and       files in the container now shows up in the local host directory
+10. Run the following command in the next command prompt or terminal window: 
+```
+docker run -v "computerdirectory":/"----" --rm -ti ubuntu:latest bash
+```
+* "---" is the new name of the new folder that will be made in the Docker container
+* This commands links up the local host's current directory to the docker container. Files that are in the the local host computer appear in the container and       files in the container now shows up in the local host directory
 11. In the container, run the following steps to upload your files to Github:
-    * git init
-    * git config --global user.name ""
-    * git config --global user.email ""
-    * git config --global remote.origin.url "Github Repo"
-    * git config --list
-    * git remote add origin ""
-    * git branch
-    * git checkout main
-    * git push origin main
+```
+git init
+```
+```
+git config --global user.name ""
+```
+
+```
+git config --global user.email ""
+```
+    
+```
+git config --global remote.origin.url "Github Repo"
+```
+
+```
+git config --list
+```
+
+```
+git remote add origin
+```
+
+```
+git branch
+```
+
+```
+git checkout main
+```
+
+```
+git pull origin main 
+```
+or
+```
+git pull origin main --allow-unrelated-histories
+```
+
+```
+git push origin main
+```
