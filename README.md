@@ -29,20 +29,51 @@ Docker is different from Git and Github since its not a version control software
 
 # Procedure
 This is a guide how to upload files from a local computer directory to Docker. In this guide, a Docker Ubuntu container will be created <br>
-1. Install Docker on your computer and open up Dockerhub (if you have it)
-2. Install Git, this allows your computer to use Git commands and upload files to Github
-3. Open up two tabs of Command Prompt, Powershell or the Terminal
-4. Change directory (cd) to the directory where you stored your application. Make sure the files are there.
-5. On the other terminal or command prompt tab, make a Docker container
-6. To make a container, an image can be pulled from Docker. Run the command 'docker pull ubuntu'. This pulls the ubuntu image from Docker's website. Docker's GUI, Dockerhub has many preset images that be pulled.   
-7. To make a container, run the command: docker run -ti ubuntu bash. If successful, you should see a container id in the command prompt or terminal with a bunch of random numbers and letters. That signifies a new container was made.
+1. Install Docker on your computer and open up Dockerhub (if you have it) <br>
+2. Install Git, this allows your computer to use Git commands and upload files to Github <br>
+3. Open up two tabs of Command Prompt, Powershell or the Terminal <br>
+4. Change directory (cd) to the directory where you stored your application. Make sure the files are there. <br>
+5. On the other terminal or command prompt tab, make a Docker container <br>
+6. To make a container, an image can be pulled from Docker. Run the command: 
+```
+docker pull ubuntu
+``` 
+This pulls the ubuntu image from Docker's website. Docker's GUI, Dockerhub has many preset images that be pulled. <br>
+<br>
+7. To make a container, run the following command:
+```
+docker run -ti ubuntu bash
+```
+If successful, you should see a container id in the command prompt or terminal with a bunch of random numbers and letters. That signifies a new container was made. <br>
+<br>
 8. In the container, install the following:
-    * apt list - Shows the current packages installed. When making a new container, the package list and versions of each package is not to up to date.
-    * apt update - Running this commands shows what packages can be downloaded or upgraded to the latest version
-    * apt upgrade - This command updates the package list
+    * 
+    * 
     * apt install git - Install git on the container to use Git commands
     * apt install ssh - Install ssh to go to a secure shell
-9. Make a new Github repository in you Github account
+```
+apt list
+```
+apt list shows the current packages installed. When making a new container, the package list and versions of each package is not to up to date.
+```
+apt update
+```
+Running the apt update command shows what packages can be downloaded or upgraded to the latest version
+```
+apt upgrade
+```
+apt upgrade updates the package list to their latest available versions
+```
+apt install git
+```
+Git is installed on the container to use Git commands
+```
+apt install ssh
+```
+ssh is now usable to enter other secure shells or servers <br>
+<br>
+9. Make a new Github repository in you Github account <br>
+<br>
 10. Run the following command in the next command prompt or terminal window: docker run -v "computerdirectory":/"----" --rm -ti ubuntu:latest bash
     * "---" is the new name of the new folder that will be made in the Docker container
     * This commands links up the local host's current directory to the docker container. Files that are in the the local host computer appear in the container and       files in the container now shows up in the local host directory
