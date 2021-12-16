@@ -115,7 +115,7 @@ git checkout main
 ```
 git pull origin main 
 ```
-or
+If an error occurs use the git pull command, use the following instead:
 ```
 git pull origin main --allow-unrelated-histories
 ```
