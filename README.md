@@ -4,6 +4,8 @@
 * [Overview](#Overview)
 * [Materials](#Materials)
 * [Software](#Software)
+* [What is Docker? Why use Docker?](#What-is-Docker?-Why-use-Docker?)
+* [How to use Docker?](#How-to-use-Docker?)
 * [Procedure](#Procedure)
 
 # Overview
@@ -19,7 +21,7 @@ Git is a popular version control software many people in the technology industry
 * Dockerhub <br>
 * Git <br>
 
-# What is Docker? Why should we use it?
+# What is Docker? Why use Docker?
 Docker is an open-source software that is available to anyone on any operating system that gives the user the ability to make a container. A container is a directory that must be initalized where it can store and deploy files in different workspaces. 
 
 # How to use Docker
